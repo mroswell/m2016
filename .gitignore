@@ -55,3 +55,7 @@ www/static-data/*
 data/books.csv
 data/tag-audit.csv
 www/share/*
+www/live-data/*
+.idea
+app_config-backup.py
+data/~$copy.xlsx
