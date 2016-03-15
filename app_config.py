@@ -41,7 +41,10 @@ PRODUCTION_S3_BUCKET = 'apps.npr.org'
 
 STAGING_S3_BUCKET = 'stage-apps.npr.org'
 
-ASSETS_S3_BUCKET = 'assets.apps.npr.org'
+# ASSETS_S3_BUCKET = 'assets.apps.npr.org'
+# ASSETS_S3_BUCKET = 's3.amazonaws.com'
+# ASSETS_S3_BUCKET = 'movement-2016.s3.amazonaws.com'
+ASSETS_S3_BUCKET = 'movement-2016'
 
 DEFAULT_MAX_AGE = 20
 
@@ -92,6 +95,8 @@ DEBUG = True
 COPY EDITING
 """
 COPY_GOOGLE_DOC_KEY = '1iV3gN-3S7W_0_R8GqJ-jYKDsbW2AOafoc3kZB59bIPE'
+COPY_GOOGLE_DOC_KEY = '1b57DbxWH6f08ZIZqPuMozeeRoc6u8LNVLcjrZQ4ptrY'
+
 COPY_PATH = 'data/copy.xlsx'
 
 DATA_GOOGLE_DOC_KEY = '1uY_0zU7wAa1TLYGC4yGJZUamLulRTJZiwKWmiHZ73qU'
@@ -172,7 +177,7 @@ def get_secrets():
 def configure_targets(deployment_target):
     """
     Configure deployment targets. Abstracted so this can be
-    overriden for rendering before deployment.
+    overridden for rendering before deployment.
     """
     global S3_BUCKET
     global S3_BASE_URL
