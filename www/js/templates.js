@@ -40,32 +40,6 @@ __p+='\n\n<div id="'+
 return __p;
 };
 
-window.JST["book_list_item"] = function(obj){
-var __p='';var print=function(){__p+=Array.prototype.join.call(arguments, '')};
-with(obj||{}){
-__p+='\n<li class="visible ';
- _.each(book.tags, function(tag) { 
-;__p+='tag-'+
-( tag )+
-' ';
- }) 
-;__p+=' '+
-( book.slug )+
-'" data-sort="'+
-( loop_index )+
-'" data-slug="'+
-( book.slug )+
-'">\n    <a href="#/book/'+
-(  book.slug )+
-'">\n        <span class="title">'+
-( book.title )+
-'</span><br />\n        <span class="author">by&nbsp;'+
-( book.author )+
-'</span>\n    </a><br />\n</li>';
-}
-return __p;
-};
-
 window.JST["book_modal"] = function(obj){
 var __p='';var print=function(){__p+=Array.prototype.join.call(arguments, '')};
 with(obj||{}){
@@ -244,6 +218,32 @@ __p+='<div class="modal-header hide">\n    <!-- <a class="hide npr-logo" href="h
 ;__p+='\n        <span class="icon-right-open"></span>\n        ';
  } 
 ;__p+='\n    </a>\n</div>\n\n\n';
+}
+return __p;
+};
+
+window.JST["book_list_item"] = function(obj){
+var __p='';var print=function(){__p+=Array.prototype.join.call(arguments, '')};
+with(obj||{}){
+__p+='\n<li class="visible ';
+ _.each(book.tags, function(tag) { 
+;__p+='tag-'+
+( tag )+
+' ';
+ }) 
+;__p+=' '+
+( book.slug )+
+'" data-sort="'+
+( loop_index )+
+'" data-slug="'+
+( book.slug )+
+'">\n    <a href="#/book/'+
+(  book.slug )+
+'">\n        <span class="title">'+
+( book.title )+
+'</span><br />\n        <span class="author">by&nbsp;'+
+( book.author )+
+'</span>\n    </a><br />\n</li>';
 }
 return __p;
 };
