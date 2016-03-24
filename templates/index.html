@@ -3,11 +3,10 @@
 {% block header_content %}
 <header id="top">
     <div class="header-wrapper">
-        <a class="npr" href="http://npr.org/books/"><img src="assets/books_logo.png" alt="NPR Books" /></a>
+        <!--a class="npr" href="http://npr.org/books/"><img src="assets/books_logo.png" alt="NPR Books" /></a-->
         <h1>{{ COPY.content.header_title }}</h1>
-        <h2>{{ COPY.content.header_subhead }}</h2>
-        <p class="dedication">{{ COPY.content.dedication }}</p>
-        <p class="byline">{{ COPY.attribution.byline }}</p>
+        <h3>{{ COPY.content.header_subhead }}</h3>
+        <p class="byline">{{ COPY.content.contact_us}}</p>
         <button class="share btn btn-default" data-toggle="modal" data-backdrop="static" data-target="#share-modal"><i class="icon-export"></i> SHARE THIS APP</button>
     </div>
 
@@ -21,7 +20,7 @@
 
         <!-- <div class="top-row"> -->
             <div class="spacer">
-                <h4 class="hidden-xs">What would you<br> like to read?</h4>
+                <h4 class="hidden-xs">Which groups would you like to&nbsp;support?</h4>
             </div>
 
             <div class="title-area">
@@ -47,15 +46,7 @@
             <div class="tags-wrapper">
 
 
-                <div class="chatter"><p>{{ COPY.content.chatter }}
-                    <a href="http://apps.npr.org/best-books-2014/#/_" target="_blank">2014</a>,
-                    <a href="http://apps.npr.org/best-books-2013/#/_" target="_blank">2013</a>,
-                    <a href="http://www.npr.org/2012/11/30/166251839/best-books-of-2012-the-complete-list" target="_blank">2012</a>,
-                    <a href="http://www.npr.org/2011/11/30/142942283/the-best-books-of-2011-the-complete-list" target="_blank">2011</a>,
-                    <a href="http://www.npr.org/2010/12/23/131566277/best-books-of-2010-the-complete-list" target="_blank">2010</a>,
-                    <a href="http://www.npr.org/templates/story/story.php?storyId=121058884" target="_blank">2009</a>,
-                    <a href="http://www.npr.org/templates/story/story.php?storyId=97212769" target="_blank">2008</a>
-                    </p>
+                <div class="chatter"><p>{{ COPY.content.chatter }}</p>
                 </div>
                 <button id="mobile-filters" class="visible-xs btn btn-primary btn-block">{{ COPY.content.filter_button }}</button>
                 <button id="clear-mobile-filters" class="visible-xs btn btn-large btn-info clear-tags hide" data-filter-value="*"><i class="icon-cancel-circled2">&nbsp;&nbsp;</i>{{ COPY.content.clear_filters }}</button>
