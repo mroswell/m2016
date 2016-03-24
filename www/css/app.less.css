@@ -7502,6 +7502,13 @@ footer .secondary a {
     display: table-cell;
     vertical-align: top;
   }
+  .book-container .spacer header,
+  .book-container .title-area header,
+  .book-container .tags-wrapper header,
+  .book-container .books-grid-wrapper header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .book-container .spacer,
   .book-container .tags-wrapper {
     width: 200px;
