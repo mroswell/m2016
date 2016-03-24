@@ -1,0 +1,11 @@
+key,value
+project_name,Movement Concierge
+byline,Billy Wimsatt
+pubdate,1/22/2013 (TKTK)
+lorem_ipsum,"Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+footer_title,This content goes to 12
+header_title,This is the Header!
+dedication,This is dedicated to the single people
+clear_filters,Clear Filters!
+header_subhead,This is a subhead.
+chatter,Use the filters below to explore some 260 titles NPR staff and critics loved this year. (You can also combine filters!) Want even more recommendations? Check out our favorite books from
